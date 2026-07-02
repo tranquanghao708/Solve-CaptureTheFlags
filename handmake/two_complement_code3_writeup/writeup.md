@@ -10,7 +10,7 @@
 
 # 1.why it's signed overflow Tmax but doesn't work after compiled?
 
-- Compiler was optimized when compiling the program, It knew condiction1 will false and condiction2 will !(true)
+- Compiler was optimized when compiling the program, It knew condiction1 will false and condiction2 will !(true). Here, it's possible in CPU architecture but not in C law because it UB and compiler working in C law
 
 # 2.Debug
 
@@ -18,4 +18,4 @@
 
 ![alt text](image0.png)
 
-- Looked it optimized by compiler, should it doesn't print flags
+- Looked it optimized by compiler, should it doesn't print flags.
