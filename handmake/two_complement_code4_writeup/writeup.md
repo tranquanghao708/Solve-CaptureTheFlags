@@ -23,3 +23,7 @@ So it always printing sequences with puts()
 ![alt text](image1.png)
 
 Worked, It's `x == Tmin && -x == x` condiction
+
+![alt text](image2.png)
+
+Program reverse after compiled
