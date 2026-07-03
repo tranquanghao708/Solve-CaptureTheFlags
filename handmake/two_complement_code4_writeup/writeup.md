@@ -22,4 +22,4 @@ So it always printing sequences with puts()
 
 ![alt text](image1.png)
 
-Worked
+Worked, It's `x == Tmin && -x == x` condiction
