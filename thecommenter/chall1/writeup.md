@@ -8,7 +8,7 @@
 
 ---
 
-##1.ghidra phân tích
+## 1.ghidra phân tích
 
 - mở ghidra ta thấy :
 
@@ -16,7 +16,7 @@
 
 - phép so sánh binary và ta biết kết quả
 
-##2.quy đổi, tạo payload và lấy flags
+## 2.quy đổi, tạo payload và lấy flags
 
 xét vị trí bit :
 
