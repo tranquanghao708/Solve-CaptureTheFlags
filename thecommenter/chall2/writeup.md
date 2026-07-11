@@ -18,7 +18,7 @@
 
 - ghidra show :
 
-![alt text](image0.png)
+![alt text](image/image0.png)
 
 - Condiction :
 
@@ -29,7 +29,7 @@
 
 bypass length + offset bằng cách làm tràn số nguyên ko dấu unsigned overflow, `0xfffffff0 + 0x401 = 11111111111111111111111111110000 + 00000000000000000000010000000000 = 000000000000000000000001111110001 (1 carry)` :
 
-![alt text](image1.png)
+![alt text](image/image1.png)
 
 0x3f1 < 0x401 = True (bypassed), bây giờ để offset là 0xfffffff0 thì đơn giản là gán cái này là offset input thôi
 
@@ -39,5 +39,5 @@ offset = 4294967280 ( 0xfffffff0 )
 
 lenght = 1024
 
-![alt text](image2.png)
+![alt text](image/image2.png)
 
