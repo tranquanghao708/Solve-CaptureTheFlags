@@ -44,7 +44,7 @@ code clean :
 
 ```c
 		int iVar1,local_20;
-		unsigned int local_18;
+		unsigned int local_18,local_14;
 
           iVar1 = scanf("%d",&local_20);
           if (iVar1 == 1) {
@@ -62,6 +62,6 @@ code clean :
 
 ## 5.Generating và lấy flags
 
-- dựa vào code trên ta có local_20 và ivar1 là signed, cho input = `-1`, tới ải công 3. Binary = 000010 (1carrry), toán học = -1 + 3 = 2, tới ải local18, binary 000010 >> 2 = 000000, tới ải local14 vẫn là -1 vì trong bù hai việc **shift Umax vẫn là chính nó** nên kết quả là `-1`
+- dựa vào code trên ta có local_20 và ivar1 là signed, cho input = `-1`, tới ải công 3. Binary = 000010 (1carrry), toán học = -1 + 3 = 2, tới ải local18, binary 000010 >> 2 = 000000, tới ải local14 vẫn là -1 vì trong bù hai việc **shift 0xffffffff trong hệ có dấu vẫn là chính nó, còn ko dấu thì sẽ dịch thành 00111111..** nên kết quả là `-1`
 
 ![alt text](image/image3.png)
