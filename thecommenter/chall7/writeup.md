@@ -12,7 +12,7 @@
 
 ghidra show:
 
-![alt text](image0.png)
+![alt text](image/image0.png)
 
 ta thấy nó phải nhỏ hơn cả hai, vậy đơn giản là kết quả có ngay trong đầu
 
@@ -20,4 +20,4 @@ ta thấy nó phải nhỏ hơn cả hai, vậy đơn giản là kết quả có
 
 - payload = 1 vì nhỏ hơn cả hai
 
-![alt text](image1.png)
+![alt text](image/image1.png)
