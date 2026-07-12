@@ -23,13 +23,6 @@
 code dọn dẹp :
 
 ```c
-
-bool check_overflow_failed_logic(int param_1,int param_2,int param_3)
-
-{
-  return 
-}
-
           iVar1 = atoi(local_58);
           iVar2 = atoi(local_38);
           uVar3 = iVar2 + iVar1;
