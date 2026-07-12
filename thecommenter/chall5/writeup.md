@@ -64,7 +64,13 @@
 
 ![alt text](image/image6.png)
 
-**Vậy proof gì để chứng minh là program sẽ đọc và compare tại vị trí đó? hình stack đâu? :**
+**Vậy proof gì để chứng minh là program sẽ đọc và compare tại vị trí đó? hình stack đâu? :** Chúng ta xét stack sau, dữ kiện có `local_1c` là `rbp - 1c`, `local1b` là `rbp-1b` và `local 28` ở strcmp là `rbp - 28`, theo strcmp nó đọc lần lượt `28, 27, 26.. <xuống>` vì stack ground down vadđr thấp nhất là RSP vậy nên 28 là điểm đầu của `normal_user` là character `n` lần lượt tới character `r` tính nullbyte tổng cộng 12 byte vậy `28 - 12 = 0x10` (chuẩn số lượng read đọc) , tính cộng lại lần lượt là `0x10 + 0xb = 0x1b` và `0x10 + 0xc = 0x1c` hai local 1c và 1b ở đây
+
+- **nhưng sao disassembly ghidra lại hiện result verify + 0x3 cho cả hai?** : nhìn rõ lại ảnh, ta thấy `result_verify,byte ptr [RBP + local_1c]` và `result_verify,byte ptr [RBP + local_1b]` trước khi so sánh với phép trừ `cmp`. Suy ra : ý nghĩa của phép tính trên chỉ tính vị trí của khai báo hai biến local1b và 1c bằng cách cộng offset sau phép trừ sequences strcmp, còn việc so sánh (compare) ở trong code thuộc vùng vaddr khác so với vaddr của riêng hai biến
+
+- **Vậy có phải 0x10 là RBP ?** :
+
+> lưu ý : decimal và hexdicimal là hai cái **RấT DỄ NHẦM LẪN** nên lưu ý `a -> f` nếu làm việc với hex
 
 #### 6.generating payload và lấy flags
 
