@@ -26,9 +26,8 @@ code dọn dẹp :
           iVar1 = atoi(local_58);
           iVar2 = atoi(local_38);
           uVar3 = iVar2 + iVar1;
-          if ((int)uVar3 < 0x3e9) {
 
-            if () {
+          if ((int)uVar3 < 0x3e9) {
 				if ( iVar2 != (uVar3 - iVar1) && //iVar phải khác uvar3 - ivar1
 
 					 ((iVar1 < 1) || (iVar2 < 1)) || (-1 < (int)uVar3) //phải false
