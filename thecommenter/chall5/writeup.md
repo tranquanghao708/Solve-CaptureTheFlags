@@ -59,3 +59,17 @@
 - condition = `(local_1c == '\x01') && (local_1b == '\x02)`, vậy `local_1c` và `local_1b` = Đã được gán gì đâu? , nhưng nhớ lại read đọc quá vùng array (oob) vậy ta có hypothesis : `"nếu đọc oob, nhớ lại BOF ta ghi đè RIP để return tới hàm win gọi đó là ret2win vậy ở đây nó so sánh \x01 và \x02, khái niệm representing_strings là biểu diễn chuỗi dưới góc nhìn memory vậy thử xác định vị trí local 1c và 1b và gán xem sao"`
 
 #### 5.1.xác định vị trí local_1b và local_1c
+
+- local_1b nằm ở vaddr là `result verify + 0x3` và local1c cũng vậy. Assembly show :
+
+![alt text](image/image6.png)
+
+**Vậy proof gì để chứng minh là program sẽ đọc và compare tại vị trí đó? hình stack đâu? :**
+
+#### 6.generating payload và lấy flags
+
+- Trước hết, strcmp chỉ read sequences khi nó gặp null byte `\0` là dừng, nhưng read đọc oob ở array thì việc đầu tiên là phải thêm nullbyte trước cho dừng strcmp đi, xong mới tới payload là `\1` và `\2`
+
+> payload = normal_user\0\1\2
+
+![alt text](image/image7.png)
