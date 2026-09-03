@@ -77,11 +77,11 @@ payload : 2147483648.5 (vượt tmax của 32bits)
 vì payload `2147483648.5` là vượt tmax của 32bits, rõ là như sau, đầu tiên khi qua condition check số âm, nó là số thực ko âm vì định dạng số thực khác với số nguyên bù hai (khác ở sign | exponent | fraction) nên vượt qua cơ chế check số âm. Lý do có thể là kiểu được ép sang kiểu cao cấp hơn cụ thể compiler rules là ép `float -> double` khi biên dịch:
 
 <p align="center">
-	<kbd>
+<kbd>
 
 	<img alt="hình ảnh ép kiểu cao hơn" src="image/image3.png">
 
-	</kbd>
+</kbd>
 
 > nguồn tại [two complement code CSAPP](https://github.com/tranquanghao708/CSAPP-learning/blob/main/writeup/two-complement-code/two-complement-code.md#m%C3%A3-b%C3%B9-hai)
 
