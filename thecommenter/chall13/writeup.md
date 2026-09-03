@@ -79,7 +79,7 @@ vì payload `2147483648.5` là vượt tmax của 32bits, rõ là như sau, đ�
 <p align="center">
 <kbd>
 
-	<img alt="hình ảnh ép kiểu cao hơn" src="image/image3.png">
+<img alt="hình ảnh ép kiểu cao hơn" src="image/image3.png">
 
 </kbd>
 
