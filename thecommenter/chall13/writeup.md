@@ -40,7 +40,7 @@ undefined4 prepare_value(undefined4 param_1)
 }
 ```
 
-Nghiã là `undefined4` là kiểu dữ liệu `int`. Vì sao ta lại biết nó là `int`, vì `int` chiếm xác suất cao nhất trong phần `undefined4` ta thấy tổng quan chương trình có float, có int đều được xác đinhj sẵn, như ảnh dưới :
+Nghiã là `undefined4` là kiểu dữ liệu `int`. Vì sao ta lại biết nó là `int`, vì `int` chiếm xác suất cao nhất trong phần `undefined4` ta thấy tổng quan chương trình có float, có int đều được xác định sẵn, như ảnh dưới :
 
 <p align="center">
 	<img alt="hình ảnh tổng quan code" src="image/image1.png">
